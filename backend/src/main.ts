@@ -11,7 +11,7 @@ async function bootstrap() {
   });
 
   const corsOptions: CorsOptions = {
-    origin: 'http://localhost:5173',
+    origin: process.env.FRONT_ENT_URL,
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     preflightContinue: false,
     optionsSuccessStatus: 204,

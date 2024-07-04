@@ -8,7 +8,6 @@ import { ConfigModule } from '@nestjs/config';
 import { LoggerModule } from './helper/logger.module';
 
 @Module({
-  // imports: [ DatabaseModule, UsersModule, AuthModule],
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
