@@ -9,7 +9,7 @@ export const ResponseFormatter = (data: any, message: string) => {
 export const ErrorFormatter = (
   err: any,
   message?: string,
-  errorObjRequired: boolean = true,
+  errorObjRequired: boolean = false,
 ) => {
   const errorObj = {
     message: 'Due to security reasons error message turned off', //For higher security can pass this data

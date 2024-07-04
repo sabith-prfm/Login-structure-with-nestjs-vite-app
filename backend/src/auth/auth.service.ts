@@ -48,7 +48,7 @@ export class AuthService {
 
       return ResponseFormatter({}, 'SignUp success');
     } catch (err) {
-      throw ErrorFormatter(err, 'Signup failed, Check input details', true);
+      throw ErrorFormatter(err, 'Signup failed, Check input details');
     }
   }
 
