@@ -1,12 +1,26 @@
-.textBoxContainer{
+.textBoxContainer {
+    position: relative;
+
     input {
         width: 96%;
         padding: 0.5rem;
         font-size: 1rem;
-      }
+    }
 
-    .errorMessage{
+    .errorMessage {
         color: red;
         font-size: .9rem;
+    }
+
+    .pswdShowBtn {
+        position: absolute;
+        top: 8px;
+        right: 2%;
+        cursor: pointer;
+        display: flex;
+    }
+
+    .pswdShowBtn:hover {
+        color: rgb(92, 101, 114);
     }
 }

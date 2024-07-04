@@ -19,4 +19,11 @@
         flex-direction: column;
         gap: 5px;
     }
+
+    .signupLabel {
+        display: flex;
+        justify-content: end;
+        font-size: .8rem;
+        margin-right: 10px;
+    }
 }

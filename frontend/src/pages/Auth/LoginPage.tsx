@@ -20,17 +20,14 @@ const LoginPage: React.FC = () => {
         validationSchema: LoginValidationSchema,
         onSubmit: (values, { setSubmitting }) => {
             post('/auth/login', values).then((res) => {
-                console.log(">>>Res", res)
-                console.log(">>>Res", res.data.data.token)
-
                 setStorageItem(StorageEnums.TOKEN, res.data.data.token)
                 setStorageItem(StorageEnums.USER_INFO, res.data.data.user)
                 setSubmitting(false)
-                Toaster('success',res.data.message)
+                Toaster('success', res.data.message)
                 navigate('/')
             }).catch(err => {
                 setSubmitting(false)
-                Toaster('error',err?.response?.data?.message)
+                Toaster('error', err?.response?.data?.message)
             })
         },
     });
@@ -63,6 +60,10 @@ const LoginPage: React.FC = () => {
                     />
                 </div>
 
+                <div className={styles.signupLabel}>
+                    <a href="/signup">Click here to Signup</a>
+                </div>
+                
                 <Button
                     type={"button"}
                     buttonLabel="Login"
