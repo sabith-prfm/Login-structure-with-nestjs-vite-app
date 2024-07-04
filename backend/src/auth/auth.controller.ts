@@ -6,10 +6,7 @@ import { ILoginProps, ISignupProps } from 'src/types/auth.types';
 
 @Controller('auth')
 export class AuthController {
-  constructor(
-    private authService: AuthService,
-    // private readonly logger: Logger,
-  ) {}
+  constructor(private authService: AuthService) {}
 
   @Post('/signup')
   signUp(@Body() signUpDto: SignUpDto): Promise<ISignupProps> {

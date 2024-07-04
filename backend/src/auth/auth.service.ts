@@ -45,6 +45,7 @@ export class AuthService {
       });
 
       await this.usersRepository.save(user);
+      this.logger.log('.............Successfully data saved in db.........');
 
       return ResponseFormatter({}, 'SignUp success');
     } catch (err) {
@@ -75,6 +76,9 @@ export class AuthService {
       }
 
       const token = this.jwtService.sign({ email: user.email });
+      this.logger.log(
+        '............Token generated... retunring token along with user info........',
+      );
 
       return ResponseFormatter(
         { token, user: { name: user.name, email: user.email } },
