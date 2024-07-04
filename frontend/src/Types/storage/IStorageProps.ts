@@ -1,0 +1,1 @@
+export type IStorageKeys = "TOKEN" | "USER_INFO"

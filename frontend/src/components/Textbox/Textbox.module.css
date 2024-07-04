@@ -1,0 +1,12 @@
+.textBoxContainer{
+    input {
+        width: 96%;
+        padding: 0.5rem;
+        font-size: 1rem;
+      }
+
+    .errorMessage{
+        color: red;
+        font-size: .9rem;
+    }
+}
