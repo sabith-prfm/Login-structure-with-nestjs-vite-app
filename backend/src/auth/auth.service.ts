@@ -46,9 +46,7 @@ export class AuthService {
 
       await this.usersRepository.save(user);
 
-      const token = this.jwtService.sign({ email: user.email });
-
-      return ResponseFormatter({ token }, 'SignUp success');
+      return ResponseFormatter({}, 'SignUp success');
     } catch (err) {
       throw ErrorFormatter(err, 'Signup failed, Check input details', true);
     }

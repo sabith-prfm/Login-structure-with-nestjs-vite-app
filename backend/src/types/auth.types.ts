@@ -1,7 +1,7 @@
 import { IResponseProps } from './common.types';
 
 export interface ISignupProps extends IResponseProps {
-  data: { token: string };
+  data: null;
 }
 
 export interface ILoginProps {
