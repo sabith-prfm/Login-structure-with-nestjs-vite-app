@@ -1,9 +1,14 @@
 # Login-structure-with-nestjs-vite-app
 
->`Note`: Before start try to have a mongodb database and obtain connection string from there else follow the given steps in `bottom` of this document to get a free mongodb
-Steps to run the app:
+>`Note`: Before starting try to have a mongodb database and obtain connection string from there else follow the given steps in `bottom` of this document to get a free mongodb
 
-1. Got backend directory
+
+For the postman collection: https://github.com/sabith-prfm/Login-structure-with-nestjs-vite-app/blob/main/Login-with-nest-js.postman_collection.json
+
+
+##  Steps to run the app:
+
+1. Goto backend directory
 2. create new file `.env`
 3. copy `.env.exapmle` to `.env`
 4. Run `yarn` and `yarn start:dev` in a treminal.
