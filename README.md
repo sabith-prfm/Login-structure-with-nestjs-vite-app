@@ -1,21 +1,21 @@
 # Login-structure-with-nestjs-vite-app
 
->`Note`: Before starting try to have a mongodb database and obtain connection string from there else follow the given steps in `bottom` of this document to get a free mongodb
-
+>`Note`: Before starting try to have a mongodb database and obtain connection string from there else follow the given steps in `bottom` of this document to get a free mongodb, also use the correct node version mentioned in the `.nvmrc`
+ file.
 
 For the postman collection: https://github.com/sabith-prfm/Login-structure-with-nestjs-vite-app/blob/main/Login-with-nest-js.postman_collection.json
 
 
 ##  Steps to run the app:
 
-1. Goto backend directory
+1. Goto backend directory and run `nvm use`
 2. create new file `.env`
 3. copy `.env.exapmle` to `.env`
 4. Run `yarn` and `yarn start:dev` in a treminal.
 5. The backend will be available in `http://localhost:3000`
 
 Frontend:
-1. Goto frontend directory
+1. Goto frontend directory and run `nvm use`
 2. create new file `.env`
 3. copy `.env.exapmle` to `.env`
 4. Run `yarn` and `yarn run dev` in a treminal.
@@ -50,7 +50,7 @@ https://github.com/sabith-prfm/Login-structure-with-nestjs-vite-app/assets/53843
 - CORS Policy : only allowed to who connects from `http://localhost:5173`(frontent url- can be updated in env)
 - JWT token used and token validity can be reduced to 5m or 10m through env.
 
-# Steps to get free MongoDB DB
+# Steps to get free MongoDB Database
 
  - go to https://cloud.mongodb.com/
  - create New project 
